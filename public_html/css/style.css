@@ -395,16 +395,16 @@ img:not([draggable]), embed, object, video{
    ============================== */
 
 body{
-    color: #111;
+    color: rgb(0, 0, 0);
     font-family: var(--font-global);
     font-size: 18px;
     font-weight: 400; /*500*/ 
     letter-spacing: -0.00208em;
-    line-height: 1.61;    
+    line-height: 32px;    
 }
 
 a{
-    color: #111;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
     -webkit-transition: color 0.1s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: color 0.1s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -467,7 +467,7 @@ h6, .h6{
     font-weight: 700;
 }
 p{
-    margin: 0 0 1.5em 0;
+    margin: 0 0 16px 0;
 }
 ul, ol{
     margin: 0 0 1.5em 0;
@@ -540,7 +540,7 @@ hr.white{
 }
 .text{        
     font-size: 16px;
-    color: #111111;
+    color: #000000;
     line-height: 1.8;
 }
 .text h1,
@@ -549,7 +549,7 @@ hr.white{
 .text h4,
 .text h5,
 .text h6{
-    color: #111;
+    color: rgb(0, 0, 0);
 }
 .light-content .text{
     font-weight: 400;
@@ -604,11 +604,11 @@ hr.white{
     width: 90px;
     height: 90px;
     margin: 0 auto 20px;
-    border: 3px solid #111;
+    border: 3px solid rgb(0, 0, 0);
     text-align: center;
     line-height: 81px;
     font-size: 32px;
-    color: #111;
+    color: rgb(0, 0, 0);
     
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -659,7 +659,7 @@ a.btn-mod{
     box-sizing: border-box;
     padding: 3px 13px 4px;
     color: #fff;
-    background: rgba(17,17,17, .9);
+    background: rgb(0, 0, 0);
     border: 2px solid transparent;
     font-size: 12px;
     font-weight: 600;
@@ -754,7 +754,7 @@ box-shadow: 0 2px 4px 0 rgb(65 66 55 / 10%);
 }
 .btn-mod.btn-border-w:hover,
 .btn-mod.btn-border-w:focus{
-    color: #111;
+    color: rgb(0, 0, 0);
     border-color: transparent;
     background: #fff;
     box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
@@ -866,7 +866,7 @@ box-shadow: 0 2px 4px 0 rgb(65 66 55 / 10%);
 .form input[type="color"],
 .form select{
     display: inline-block;
-    height: 27px;
+    height: 100px;
     vertical-align: middle;
     font-size: 13px;
     font-weight: 400;
@@ -1803,7 +1803,7 @@ a.logo:hover{
     position: relative;
 }
 .inner-nav ul li a{
-    color: #111;
+    color: rgb(0, 0, 0);
     display: inline-block;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1814,7 +1814,7 @@ a.logo:hover{
 }
 .inner-nav ul li a:hover,
 .inner-nav ul li a.active{
-    color: #111;
+    color: rgb(0, 0, 0);
     opacity: 1;
     text-decoration: none;
 }
@@ -2493,16 +2493,16 @@ a.logo:hover{
     color: #ffffff;
 }
 .bg-yellow2-lighter{
-    background-color: #f3f2ec !important;
+    background-color: #faf9f6 !important;
 }
 .bg-dark{
     background-color: #111 !important;
 }
 .bg-dark-lighter{
-    background-color: #1b1b1b !important;
+    background-color: #000 !important;
 }
 .bg-dark.light-content{
-    background-color: #1b1b1b !important;
+    background-color: #000 !important;
 }
 
 .bg-dark,
@@ -2755,7 +2755,7 @@ a.logo:hover{
     display: inline-block;
     padding-bottom: 2px;
     position: relative;
-    color: #111;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -4169,7 +4169,7 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background: #fff;
+    background: rgba(0, 0, 0, 0);
     border-radius: 50%;    
 }
 .ci-icon i,
@@ -4611,14 +4611,14 @@ a.link-to-top:hover{
     opacity: .2;
 }
 .blog-item-more{
-    border: 1px solid #ccc;
-    padding: 5px 10px 8px 10px;
+    border: 1px solid #353535;
+    padding: 8px 16px 8px 16px;
     font-size: 18px;
-    font-weight: 600;
-    color: #757575;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    font-weight: 500;
+    color: #353535;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
@@ -4630,7 +4630,7 @@ a.link-to-top:hover{
     font-size: 14px;
 }
 a.blog-item-more{
-    color: #757575;
+    color: ##353535;
     text-decoration: none;
 }
 a.blog-item-more:hover{
