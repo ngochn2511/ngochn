@@ -1,0 +1,21 @@
+{
+  "Console log": {
+    "prefix": "clg",
+    "body": ["console.log($1)"],
+    "description": "Console log"
+  },
+  "Console error": {
+    "prefix": "cle",
+    "body": ["console.error($1)"],
+    "description": "Console error"
+  },
+  "Console Count": {
+    "prefix": "clc",
+    "body": ["console.count($1)"],
+    "description": "Console Count"
+  },
+  "Export * from XXX": {
+    "prefix": "exs",
+    "body": ["export * from './${0}';"]
+  }
+}

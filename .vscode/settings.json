@@ -1,0 +1,11 @@
+{
+  "html.format.enable": true,
+  "html.format.templating": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.maxPreserveNewLines": 80,
+  "html.format.preserveNewLines": true,
+
+  "html.suggest.html5": true,
+  "html.autoClosingTags": true,
+  "editor.linkedEditing": true
+}
