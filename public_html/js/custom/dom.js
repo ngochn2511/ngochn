@@ -63,3 +63,25 @@ async function getBlockIdViewPort() {
     }
   }
 }
+
+function scrollToView(selector, topPosition) {
+  const section = document.querySelector(selector);
+  if (section) {
+    const currentUrl = window.location.href;
+    const fragmentUrls = currentUrl.split("#");
+
+    if (fragmentUrls.length !== 0) {
+      const baseUrl = fragmentUrls[0];
+      window.location.href = baseUrl + selector;
+    } else {
+      window.location.href += selector;
+    }
+
+    const { position, top } = section.style;
+    section.style.position = "relative";
+    section.style.top = topPosition + "px";
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    section.style.top = top;
+    section.style.position = position;
+  }
+}
