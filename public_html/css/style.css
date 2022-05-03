@@ -138,7 +138,7 @@ Primary use: Multipurpose Template
    Common styles
    ============================== */
 :root{
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     --font-global: Poppin, sans-serif;
     --font-global-alt: Poppin, sans-serif;
 }

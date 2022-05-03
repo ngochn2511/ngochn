@@ -38,29 +38,29 @@ const getDomElements = async selectors => {
 };
 
 function getKeyMap(map, val) {
-  return [...map].find(([_, value]) => val === value)?.[0];
+  return [...map].find(([_, value]) => val === value.hashId)?.[1]?.index;
 }
 
 async function getBlockIdViewPort() {
-  if (isBrowser) {
-    const approximatePaddingTop = 30;
-    const [symbolSections, header] = await Promise.all([
-      getDomElements(".section-detail-info"),
-      getDomElement("#header")
-    ]);
-    const _sections = [...symbolSections];
-    const nextViewport = _sections.find(section => {
-      const { offsetTop, clientHeight } = section;
-      const sectionOffset = offsetTop + clientHeight - approximatePaddingTop;
-      const viewPortScroll = window.scrollY + (header?.clientHeight || 0);
-      if (sectionOffset >= viewPortScroll) return true;
-      return false;
-    });
+  const approximatePaddingTop = 80;
+  const [symbolSections, header] = await Promise.all([
+    getDomElements(".main-content h3"),
+    getDomElement("header")
+  ]);
+  console.log("getBlockIdViewPort  👻  header", header?.clientHeight);
+  const _sections = [...symbolSections];
+  const nextViewport = _sections.find(section => {
+    const { offsetTop, clientHeight } = section;
+    const sectionOffset = offsetTop + clientHeight;
+    const viewPortScroll = window.scrollY + (header?.clientHeight || 0);
+    if (sectionOffset >= viewPortScroll) return true;
+    return false;
+  });
 
-    if (nextViewport) {
-      const id = getKeyMap(SectionIdMap, nextViewport.id);
-      return id;
-    }
+  if (nextViewport) {
+    const id = getKeyMap(blockSections, "#" + nextViewport.id);
+
+    return id;
   }
 }
 

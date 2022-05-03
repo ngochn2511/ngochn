@@ -7,8 +7,6 @@ headers.forEach((header, index) => {
   blockSections.set(value, { index, value, hashId: `#${header.id}` });
 });
 
-console.log("blockSections", blockSections);
-
 async function makeMagicNavigation() {
   const menu = await getDomElement("#navigation-menu");
   blockSections.forEach((value, key) => {
@@ -22,6 +20,7 @@ async function makeMagicNavigation() {
     child.style.cursor = "pointer";
     child.style.borderRadius = "4px";
     child.style.padding = "4px";
+    child.style.paddingLeft = "12px";
 
     child.addEventListener("mouseover", () => {
       child.style.background = "rgba(121,82,179,0.1)";
@@ -38,5 +37,13 @@ async function makeMagicNavigation() {
     menu.append(child);
   });
 }
+
+document.addEventListener(
+  "scroll",
+  throttle(async () => {
+    const id = await getBlockIdViewPort();
+    console.log("document.addEventListener  👻  id", id);
+  }, 100)
+);
 
 makeMagicNavigation();
