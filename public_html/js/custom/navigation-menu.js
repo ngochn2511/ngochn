@@ -2,7 +2,7 @@ let blockSections = new Map([]);
 const sectionTitle = [];
 const headers = document.querySelectorAll(".main-content h3");
 headers.forEach((header, index) => {
-  const value = header.innerHTML.split(". ")[1];
+  const value = header.innerHTML.split(". ")[1] || header.innerHTML;
   sectionTitle.push(value);
   blockSections.set(value, { index, value, hashId: `#${header.id}` });
 });
