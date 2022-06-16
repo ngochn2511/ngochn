@@ -6322,3 +6322,12 @@ table.shopping-cart-table tr td{
     -webkit-animation-duration: 1.2s;
     animation-duration: 1.2s;
 }
+
+@media screen and (max-width: 480px) {
+    #navigation-menu {
+        display: none;
+    }
+    .main-content {
+        gap: 0 !important;
+    }
+}

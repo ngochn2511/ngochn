@@ -39,13 +39,15 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
 
      <!-- Navigation panel -->
-     <header class="main-nav transparent stick-fixed wow-menubar">
+     <header class="main-nav wow-menubar fadeInDownShort animated small-height body-scrolled" 
+              style="position: fixed;top: 0;width: 100%;">
+    
       <div class="mx-auto relative clearfix">
         <!-- Logo ( * your text or image into link tag *) -->
         <div class="nav-logo-wrap local-scroll">
           <a href="index.html" class="logo">
             <img
-              src="images/logo-white.svg"
+              src="images/logo-dark.svg"
               alt="Company logo"
               width="188"
               height="37"
@@ -61,7 +63,10 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
         <!-- Main Menu -->
         <div class="inner-nav desktop-nav">
-          <ul class="clearlist scroll-nav local-scroll">
+          <ul class="clearlist scroll-nav local-scroll" style="
+          height: 85px;
+          display: flex;
+          align-items: center;">
             <li><a href="#home">Home</a></li>
             <li
               ><a href="#portfolio" class="mn-has-sub active"
@@ -79,7 +84,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
     
     <!-- Page Wrap -->
-    <main id="main">
+    <main id="main" style="margin-top: 85px;">
       <!-- Home Section -->
       <section
         class="page-section bg-dark-alfa-50"
@@ -720,18 +725,18 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             </div>
           </div>
         </div>
-          <hr class="mt-0 mb-0" />
-          <!-- End Divider -->
+    </main>
 
+        <div class="pt-50">
           <!-- Section -->
-          <section class="page-section">
-            <h3 id="Other-Projects" class="mt-0 font-alt section-title text-center">Other Projects</h3
-            >
+          <section class="page-section bg-gray-lighter footer pb-100 pb-sm-50">
+            <h2 class="section-title mb-4">Other Projects</h2>
+
             <div class="container relative">
 
               <!-- Works Grid -->
               <ul
-                class="works-grid work-grid-2 work-grid-gut clearfix hover-white hide-titles"
+                class="works-grid work-grid-2 work-grid-gut clearfix hover-white"
               >
                 <!-- Work Item (Lightbox) -->
                 <li class="work-item">
@@ -777,11 +782,6 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             </div>
           </section>
       </div>
-
-      <!-- Divider -->
-      </div>
-
-    </main>
 
     <!-- Contact Section -->
     <section class="page-section bg-dark-lighter light-content" id="contact">
