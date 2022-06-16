@@ -1776,12 +1776,12 @@ a.logo:hover{
     top: 0;
 }
 .small-height{
-    height: 65px !important;
+    height: 85px !important;
 }
 .small-height .inner-nav ul li a,
 .mobile-cart.small-height{
-    height: 65px !important;
-    line-height: 62px !important;
+    height: 85px !important;
+    line-height: 85px !important;
 }
 .inner-nav{
     display: inline-block;
@@ -1828,7 +1828,7 @@ a.logo:hover{
 }
 .body-scrolled .inner-nav ul li a,
 .js-no-transparent-white .inner-nav ul li a{
-    color: #959791;
+    color: #000;
     opacity: 1;
 }
 .body-scrolled .inner-nav ul li a:hover,
