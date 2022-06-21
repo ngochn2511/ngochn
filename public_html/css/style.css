@@ -2478,6 +2478,9 @@ a.logo:hover{
 .bg-gray{
     background-color: #f1f1f1;
 }
+.bg-gradient-lighter{
+    background-color: linear-gradient(#FFEFEC 100%, #EEF1F7 100%);
+}
 .bg-gray-lighter{
     background-color: #f7f7f7;
     
@@ -2504,6 +2507,8 @@ a.logo:hover{
 .bg-dark.light-content{
     background-color: #000 !important;
 }
+
+
 
 .bg-dark,
 .bg-dark-lighter,
