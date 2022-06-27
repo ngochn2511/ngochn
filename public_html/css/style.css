@@ -2479,7 +2479,7 @@ a.logo:hover{
     background-color: #f1f1f1;
 }
 .bg-gradient-lighter{
-    background-color: linear-gradient(#FFEFEC 100%, #EEF1F7 100%);
+    background-image: linear-gradient(#FFEFEC 100%, #EEF1F7 100%);
 }
 .bg-gray-lighter{
     background-color: #f7f7f7;
