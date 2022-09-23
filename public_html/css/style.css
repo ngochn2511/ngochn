@@ -3567,7 +3567,7 @@ a.logo:hover{
     color: #000;
 }
 .works-grid.hover-white .work-item:hover .work-img:after{    
-    background: rgba(250,250,250, .9);
+    background: rgba(250, 250, 250, 0.3);
 }
 
 .work-item .work-img > img{ 
