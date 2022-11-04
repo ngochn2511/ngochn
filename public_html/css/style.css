@@ -2074,7 +2074,7 @@ a.logo:hover{
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 0 15px;
+    padding: 0;
     
     z-index: 100;    
 }
